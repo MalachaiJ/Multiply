@@ -22,6 +22,10 @@
                                 <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="number1:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="xZZ-Jw-tRy"/>
+                                    <action selector="number2:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Hxg-QQ-cJa"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdB-UX-EOq">
                                 <rect key="frame" x="293" y="425" width="439" height="87"/>
@@ -46,6 +50,9 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="number1:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="i1b-Sy-ljv"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVb-RE-Dod">
                                 <rect key="frame" x="438" y="561" width="148" height="84"/>
@@ -64,13 +71,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NsO-Ws-XsK"/>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofC-Cx-kMd"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
+                    <connections>
+                        <outlet property="label1" destination="JdB-UX-EOq" id="zEa-7F-NUw"/>
+                        <outlet property="textField1" destination="iiZ-40-bjM" id="QqX-gc-nRE"/>
+                        <outlet property="textField2" destination="dBw-pE-w37" id="SPv-lG-Y3C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

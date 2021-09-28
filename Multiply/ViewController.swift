@@ -47,10 +47,10 @@ class ViewController: UIViewController
     
     @IBOutlet weak var label1: UILabel!
     override func viewDidLoad()
-    
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
    
     }
     
@@ -58,14 +58,21 @@ class ViewController: UIViewController
     
     @IBAction func calculateButton(_ sender: Any)
     {
+        textField1.resignFirstResponder()
+        textField2.resignFirstResponder()
         var Num1 = textField1.text ?? "0"
-         var intergerNumber1 = Int(Num1) ?? 0
+         var intergerNumber1 = Float(Num1) ?? 0
         
         var Num2 = textField2.text ?? "0"
-        var intergerNumber2 = Int(Num2) ?? 0
+        var intergerNumber2 = Float(Num2) ?? 0
+        
+        var product = intergerNumber1 * intergerNumber2
+        label1.text = "\(intergerNumber1 * intergerNumber2)"
+        
     }
-    
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+//    {
+//        textField.resignFirstResponder()
+//        return true
+//    }
 }
-    
-
-

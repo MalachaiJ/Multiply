@@ -56,6 +56,7 @@ class ViewController: UIViewController
     
     //MARK: MVP Button
     
+    @IBOutlet weak var uiImage: UIImageView!
     @IBAction func calculateButton(_ sender: Any)
     {
         textField1.resignFirstResponder()
@@ -69,10 +70,12 @@ class ViewController: UIViewController
         var product = intergerNumber1 * intergerNumber2
         label1.text = "\(intergerNumber1 * intergerNumber2)"
         
+        //MARK: Strech 1
+        if product == 64.0
+        {
+            uiImage.image = UIImage (named: "Yoshi")
+        
+        }
     }
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool
-//    {
-//        textField.resignFirstResponder()
-//        return true
-//    }
+
 }

@@ -70,12 +70,13 @@ class ViewController: UIViewController
         var product = intergerNumber1 * intergerNumber2
         label1.text = "\(intergerNumber1 * intergerNumber2)"
         
-        //MARK: Strech 1
+        //MARK: Strech 2
         if product == 64.0
         {
             uiImage.image = UIImage (named: "Yoshi")
-        
+
         }
     }
-
+            
 }
+

@@ -76,7 +76,16 @@ class ViewController: UIViewController
             uiImage.image = UIImage (named: "Yoshi")
 
         }
+       
+        
     }
             
+    @IBAction func clearButton(_ sender: Any)
+    {
+        textField1.text = "0"
+        textField2.text = "0"
+        uiImage.isHidden = true
+        label1.text = "0.0"
+    }
 }
 
